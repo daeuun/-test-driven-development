@@ -22,8 +22,7 @@ public class Comment {
     public Comment() {
     }
 
-    public Comment(long id, int parentId, String content, Members member, LocalDateTime created_at, LocalDateTime updated_at, boolean deleted, boolean is_secret) {
-        this.id = id;
+    public Comment(int parentId, String content, Members member, LocalDateTime created_at, LocalDateTime updated_at, boolean deleted, boolean is_secret) {
         this.parentId = parentId;
         this.content = content;
         this.member = member;
@@ -31,7 +30,7 @@ public class Comment {
         this.updated_at = updated_at;
         this.deleted = deleted;
         this.is_secret = is_secret;
-    }    
+    }
 
     public long getId() {
         return this.id;

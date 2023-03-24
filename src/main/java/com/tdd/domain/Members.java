@@ -12,17 +12,12 @@ public class Members {
     private Long id;
     private Long memberId;
     private String nickname;
+    private boolean deleted;
 
     public Members() {
     }
 
-    public Members(Long id, String nickname) {
-        this.id = id;
-        this.nickname = nickname;
-    }
-
-    public Members(long id, long memberId, String nickname) {
-        this.id = id;
+    public Members(Long memberId, String nickname) {
         this.memberId = memberId;
         this.nickname = nickname;
     }
